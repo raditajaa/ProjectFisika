@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrol Projek Plastika</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="card">
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Projek Plastika</h1>
+            <p class="subtitle">Panel Kontrol Mesin Otomatis</p>
+        </header>
+
+        <!-- STATUS -->
+        <section class="status-section">
+            <div id="statusText" class="status-badge">
+                Sistem Siap
+            </div>
+        </section>
+
+        <!-- CONTROL -->
+        <section class="control-section">
+            <!-- START MESIN -->
+            <a href="/start" class="button-link">
+                <button id="startButton" class="btn btn-start" type="button">
+                    AKTIFKAN MESIN
+                </button>
+            </a>
+
+            <!-- BUKA PINTU -->
+            <a id="doorLink" href="/open-door" class="button-link">
+                <button id="doorButton" class="btn btn-door" type="button">
+                    BUKA PINTU MESIN
+                </button>
+            </a>
+        </section>
+
+        <!-- PROGRESS -->
+        <section class="progress-section">
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar">
+                    0%
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="./script.js"></script>
+</body>
+</html>
